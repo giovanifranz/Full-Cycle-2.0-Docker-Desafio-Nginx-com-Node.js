@@ -27,8 +27,8 @@ services:
       - node-network
     ports:
       - "8080:80"
-
-
+    depends_on:
+      - app
 
   db:
     image: mysql:5.7
